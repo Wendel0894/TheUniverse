@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#ContainerMenu{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(14, 94, 121);
+}
+
+.Logo{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.Menu{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    transition: all 0.5s ease;
+}
+
+.Menu>a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.Menu>a:hover{
+    background-color: white;
+    color: teal;
+}
+
+#marcador{
+    display: none;
+}
+
+
+
+#texto{
+    font-size: 50px;
+    text-align: start;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-style: italic;
+    background-color: whitesmoke;
+}
+
+#img1{
+    width: 400px;
+    height: 400px;
+}
+
+.Conteudo{
+   display: flex;
+   justify-content: center;
+}
+
+.Conteudo>div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+#texto2{
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-style: italic;
+    background-color: whitesmoke;
+}
+
+
+
+#descricao{
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px;
+}
+
+#Mobile{
+    font-size: 25px;
+    padding: 10px;  
+    display: none;
+    
+}
+
+#ContainerPl{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgb(14, 94, 121);
+    height: 300px;
+}
+
+.planetas{
+    display: flex;
+    justify-content: space-around;
+}
+.planetas>div>input{
+    padding: 30px;
+    border: none;
+    border-radius: 16px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    border-top: 5px solid gray;
+    padding: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 600px){
+    
+    .Logo{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #Mobile{
+        display: block;
+        background-color: white;
+    }
+
+    .Menu{
+        flex-direction: column;
+        text-align: center;
+        width: 100px;
+        background-color: yellowgreen;
+        position: absolute;
+        margin-top: 120px;
+        margin-left: -100%;
+    }
+
+    #marcador:checked ~ .Menu{
+        margin-left: 0;
+    }
+    
+    .Conteudo>div{
+        flex-direction: column;
+    }
+
+    .C1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .C2{
+        padding: 10px;
+    }
+    #ContainerPl{
+        height: 100%;
+    }
+    .planetas{
+        flex-wrap: wrap;
+    }
+    .planetas>div>input{
+        padding: 50px;
+        margin: 20px;
+    }
+    
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer a{
+        padding: 10px;
+    }
+   
+}
